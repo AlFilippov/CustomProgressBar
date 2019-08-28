@@ -23,7 +23,15 @@ public class DotsProgressBar extends View {
         initDotSize();
     }
 
+    public DotsProgressBar(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        initDotSize();
+    }
 
+    public DotsProgressBar(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        initDotSize();
+    }
 
 
     @Override
