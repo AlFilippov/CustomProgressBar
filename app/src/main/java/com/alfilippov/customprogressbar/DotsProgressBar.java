@@ -38,10 +38,7 @@ public class DotsProgressBar extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        if (isShown()) {
-            mPaint.setColor(Color.BLACK);
-            createDots(canvas, mPaint);
-        }
+        if (isShown())  mPaint.setColor(Color.BLACK);createDots(canvas, mPaint);
 
     }
 
