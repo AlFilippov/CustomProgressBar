@@ -17,6 +17,7 @@ public class DotsProgressBar extends View {
     private int mBounceDotRadius = 7;
     private int mDotPosition;
     private int mDotAmount = 6;
+    private Paint mPaint = new Paint();
 
     public DotsProgressBar(Context context) {
         super(context);
@@ -38,9 +39,8 @@ public class DotsProgressBar extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         if (isShown()) {
-            Paint paint = new Paint();
-            paint.setColor(Color.BLACK);
-            createDots(canvas, paint);
+            mPaint.setColor(Color.BLACK);
+            createDots(canvas, mPaint);
         }
 
     }
